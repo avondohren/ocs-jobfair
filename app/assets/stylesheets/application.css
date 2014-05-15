@@ -11,3 +11,88 @@
  *= require_self
  *= require_tree .
  */
+
+/* Clarfix */
+.clear:before,
+.clear:after {
+    content: " ";
+    display: table;
+}
+
+.clear:after {
+    clear: both;
+}
+
+/* Layout Elements */
+
+html { height: 100%; }
+
+body {
+  background: #0078AE;
+  background-image: url('/assets/bright-squares.png');
+  font-family: 'Open Sans', sans-serif;
+  height: 93%;
+}
+
+#container {
+  width: 100%;
+  max-width:1000px;
+  height: 100;
+  min-height: 100%;
+  background-color: rgba(255,255,255,1);
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#flash{
+  background-color: rgba(255,255,255,0.6);
+  border-radius: 10px;
+  border: 1 solid black;
+  padding-left: 15px;
+}
+
+h1, h2{
+  border-bottom: 2px solid;
+}
+
+a {
+  color: black;
+}
+
+a:hover {text-decoration:underline;}
+
+.right{
+  float: right;
+}
+
+.left{
+  float: left;
+}
+
+.inlineblock{
+  display: inline-block;
+}
+
+.center{
+  margin: 0 auto;
+}
+
+.tc{
+  text-align: center;
+}
+
+/* Project Specific Style*/
+
+a.new_button {
+  color: white;
+  background-color: #8B0000;
+  text-decoration:none;
+  padding: 7px 15px;
+  margin: -6px 4px;
+  border-radius: 5px;
+}
+
+a.submit {
+  background-color: #63aa24;
+}

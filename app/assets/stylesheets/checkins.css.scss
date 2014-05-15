@@ -1,3 +1,92 @@
 // Place all the styles related to the checkins controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+ul#logos li {
+  height: 0;
+}
+
+li a.logo {
+  background-image: url('/assets/jobfair.jpg');
+  overflow: hidden;
+  color: transparent;
+  position: relative;
+  float: left;
+}
+  
+#ocs {
+  background-position: -38px -30px;
+  height: 0;
+  padding-bottom: 195px;
+  width: 132px;
+}
+
+#huddle {
+  background-position: -595px -361px;
+  height: 0;
+  padding-bottom: 51px;
+  width: 174px;
+}
+
+#agape {
+  background-position: -442px -835px;
+  height: 0;
+  padding-bottom: 47px;
+  width: 55px;
+}
+
+#swanrus {
+  background-position: -489px -796px;
+  height: 0;
+  padding-bottom: 25px;
+  width: 168px;
+}
+
+#flywheel {
+  background-position: -476px -736px;
+  height: 0;
+  padding-bottom: 37px;
+  width: 128px;
+}
+
+#lemon {
+  background-position: -671px -796px;
+  height: 0;
+  padding-bottom: 29px;
+  width: 99px;
+}
+
+#west {
+  background-position: -617px -733px;
+  height: 0;
+  padding-bottom: 39px;
+  width: 49px;
+}
+
+#lyconic {
+  background-position: -673px -738px;
+  height: 0;
+  padding-bottom: 29px;
+  width: 99px;
+}
+
+#ervinsmith {
+  background-position: -500px -847px;
+  height: 0;
+  padding-bottom: 29px;
+  width: 112px;
+}
+
+#mtrl {
+  background-position: -623px -834px;
+  height: 0;
+  padding-bottom: 49px;
+  width: 59px;
+}
+
+#bwb {
+  background-position: -697px -834px;
+  height: 0;
+  padding-bottom: 49px;
+  width: 68px;
+}

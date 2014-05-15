@@ -1,5 +1,31 @@
-<h1>New checkin</h1>
+<h1>Welcome!</h1>
+<h3>Please Check-In</h3>
 
-<%= render 'form' %>
+<ul id="logos" class="clear">
+  <li><a href="#" id="ocs" class="logo" data-name="OmahaCodeSchool">OCS</a></li>
+  <li><a href="#" id="huddle" class="logo" data-name="Hudl">Hudl</a></li>
+  <li><a href="#" id="agape" class="logo" data-name="AgapeRed">Agape Red</a></li>
+  <li><a href="#" id="flywheel" class="logo" data-name="FlyWheel">FlyWheel</a></li>
+  <li><a href="#" id="swanrus" class="logo" data-name="SwansonRussell">Swanson Russell</a></li>
+  <li><a href="#" id="lemon" class="logo" data-name="Lemonly">Lemonly</a></li>
+  <li><a href="#" id="west" class="logo" data-name="West">West</a></li>
+  <li><a href="#" id="lyconic" class="logo" data-name="Lyconic">Lyconic</a></li>
+  <li><a href="#" id="ervinsmith" class="logo" data-name="ErvinAndSmith">Ervin and Smith</a></li>
+  <li><a href="#" id="mtrl" class="logo" data-name="MRTL">mtrl</a></li>
+  <li><a href="#" id="bwb" class="logo" data-name="BigWheelBrigade">Big Wheel</a></li>
+</ul>
 
-<%= link_to 'Back', checkins_path %>
+<div id="checkin_div">
+  <%= form_tag :checkins, remote: true do %>
+    <%= label_tag :company %>
+    <%= text_field_tag :company, nil, :class => "company", :autofocus => true %><br />
+    
+    <%= label_tag :name %>
+    <%= text_field_tag :name, nil, :class => "name" %><br />
+    
+    <%= label_tag :title %>
+    <%= text_field_tag :title, nil, :class => "title" %>
+    
+    <%= link_to("Check In", '#', :class => "new_button submit") %>
+  <% end %>
+</div>
