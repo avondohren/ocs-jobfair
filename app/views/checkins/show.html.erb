@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @checkin.name %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @checkin.title %>
+</p>
+
+<p>
+  <b>Company:</b>
+  <%= @checkin.company %>
+</p>
+
+
+<%= link_to 'Edit', edit_checkin_path(@checkin) %> |
+<%= link_to 'Back', checkins_path %>
