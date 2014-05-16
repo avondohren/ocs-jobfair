@@ -33,8 +33,8 @@ function dymoprint(printer, company, personName, title)
     case "west":
       var labelXml = west;
       break;
-    case "mrtl":
-      var labelXml = mrtl;
+    case "mtrl":
+      var labelXml = mtrl;
       break;
     }
 
