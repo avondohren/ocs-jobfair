@@ -13,3 +13,11 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+$(document).ready(function() {
+  $('#container').on('click', ".submit", function(event){
+    $(this).closest('form').submit();
+    console.log("clicked" + $(this).closest('form'));
+    event.preventDefault();
+  });
+});

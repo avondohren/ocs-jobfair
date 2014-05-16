@@ -46,9 +46,11 @@ class CheckinsController < ApplicationController
       if @checkin.save
         format.html { redirect_to @checkin, notice: 'Checkin was successfully created.' }
         format.json { render json: @checkin, status: :created, location: @checkin }
+        format.js
       else
         format.html { render action: "new" }
         format.json { render json: @checkin.errors, status: :unprocessable_entity }
+        format.js { render :action => "errors" }
       end
     end
   end

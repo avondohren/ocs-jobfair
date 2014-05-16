@@ -1,31 +1,23 @@
-<h1>Welcome!</h1>
-<h3>Please Check-In</h3>
+<h1>Welcome! Please Check-In</h1>
+<h3>Select Your Organization:</h3>
 
-<ul id="logos" class="clear">
-  <li><a href="#" id="ocs" class="logo" data-name="OmahaCodeSchool">OCS</a></li>
-  <li><a href="#" id="huddle" class="logo" data-name="Hudl">Hudl</a></li>
-  <li><a href="#" id="agape" class="logo" data-name="AgapeRed">Agape Red</a></li>
-  <li><a href="#" id="flywheel" class="logo" data-name="FlyWheel">FlyWheel</a></li>
-  <li><a href="#" id="swanrus" class="logo" data-name="SwansonRussell">Swanson Russell</a></li>
-  <li><a href="#" id="lemon" class="logo" data-name="Lemonly">Lemonly</a></li>
-  <li><a href="#" id="west" class="logo" data-name="West">West</a></li>
-  <li><a href="#" id="lyconic" class="logo" data-name="Lyconic">Lyconic</a></li>
-  <li><a href="#" id="ervinsmith" class="logo" data-name="ErvinAndSmith">Ervin and Smith</a></li>
-  <li><a href="#" id="mtrl" class="logo" data-name="MRTL">mtrl</a></li>
-  <li><a href="#" id="bwb" class="logo" data-name="BigWheelBrigade">Big Wheel</a></li>
-</ul>
+<div id="sponsors" class="clear">
+  <!-- Supporting Sponsor Logos -->
+  <a href="#" id="hudl" class="logo col" data-name="hudl">Hudl</a>
+  <a href="#" id="ocs" class="logo col2" data-name="ocs">Omaha Code School</a>
+  <a href="#" id="lemonly" class="logo col" data-name="lemonly">Lemonly</a>
+  <a href="#" id="flywheel" class="logo col" data-name="flywheel">FlyWheel</a>
+  <a href="#" id="swanrus" class="logo col" data-name="swanrus">Swanson Russell</a>
+  <a href="#" id="agape" class="logo col" data-name="agape">Agape Red</a>
+  <a href="#" id="west" class="logo col" data-name="west">West</a>
+  <a href="#" id="lyconic" class="logo col" data-name="lyconic">Lyconic</a>
+  <a href="#" id="es" class="logo col" data-name="es">Ervin and Smith</a>
+  <a href="#" id="mtrl" class="logo col" data-name="mtrl">MTRL</a>
+  <a href="#" id="bwb" class="logo col" data-name="bwb">Big Wheel Brigade</a> </div>
 
 <div id="checkin_div">
-  <%= form_tag :checkins, remote: true do %>
-    <%= label_tag :company %>
-    <%= text_field_tag :company, nil, :class => "company", :autofocus => true %><br />
-    
-    <%= label_tag :name %>
-    <%= text_field_tag :name, nil, :class => "name" %><br />
-    
-    <%= label_tag :title %>
-    <%= text_field_tag :title, nil, :class => "title" %>
-    
-    <%= link_to("Check In", '#', :class => "new_button submit") %>
-  <% end %>
+  <%= render :partial => "form" %>
 </div>
+
+<h3 class="error">Organization, Name, and Title are required.</h3>
+<h3 class="success">Checked In Successfully.</h3>
