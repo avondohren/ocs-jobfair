@@ -85,7 +85,7 @@ a:hover {text-decoration:underline;}
 
 /* Project Specific Style*/
 
-a.new_button {
+input.new_button {
   color: white;
   background-color: #8B0000;
   text-decoration: none;
@@ -99,6 +99,10 @@ a.new_button {
   font-size: 28px;
 }
 
-a.submit {
+input.submit {
   background-color: #63aa24;
+}
+
+.transparent {
+  color: transparent;
 }

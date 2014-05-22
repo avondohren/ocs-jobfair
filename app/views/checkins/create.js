@@ -3,6 +3,7 @@ printlabel("<%= @checkin.company %>", "<%= @checkin.name %>", "<%= @checkin.titl
 
 // Empty Input Cells
 $('a').removeClass("selected");
-$("input").val("");
+$('input:text').val("");
+$("input").blur();
 $("h3.success").slideDown();
 $("h3.success").delay(3000).slideUp();

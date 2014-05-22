@@ -20,5 +20,8 @@
   
   <%= f.hidden_field :company %>
   
-  <%= link_to('Print Name Tag ', '#', :class => 'new_button submit print', :id => 'submit') %>
+  <div class="field">
+    <%= f.submit "Print Name Tag", :class => 'new_button submit print', :id => 'submit' %>
+  </div>
+  
 <% end %>
