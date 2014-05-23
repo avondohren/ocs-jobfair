@@ -20,4 +20,8 @@ $(document).ready(function() {
     console.log("clicked" + $(this).closest('form'));
     event.preventDefault();
   });
+  
+  $('.marquee').marquee({
+    duplicated: true
+  });
 });
